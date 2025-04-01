@@ -1,6 +1,5 @@
 package com.example.demo.Domain;
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 @Table(name = "Risks")
@@ -13,7 +12,7 @@ public class Risk {
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "product_id")
-    private Product product;
+    private Produiict product;
 
     private String description;
     private int probability;
@@ -31,11 +30,11 @@ public class Risk {
         this.risk_id = risk_id;
     }
 
-    public Product getProduct() {
+    public Produiict getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(Produiict product) {
         this.product = product;
     }
 

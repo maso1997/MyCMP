@@ -12,7 +12,7 @@ public class ValidationGrid {
     private Date creation_date;
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "product_id")
-    private Product product;
+    private Produiict product;
     @ManyToOne
     @JoinColumn(name = "coordinator_id", referencedColumnName = "user_id")
     private User coordinator;
@@ -33,11 +33,11 @@ public class ValidationGrid {
         this.creation_date = creation_date;
     }
 
-    public Product getProduct() {
+    public Produiict getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(Produiict product) {
         this.product = product;
     }
 

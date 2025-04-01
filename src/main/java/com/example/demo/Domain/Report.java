@@ -13,7 +13,7 @@ public class Report {
 
     @ManyToOne
     @JoinColumn(name = "product_id", referencedColumnName = "product_id")
-    private Product product;
+    private Produiict product;
 
     @ManyToOne
     @JoinColumn(name = "risk_id", referencedColumnName = "risk_id")
@@ -30,11 +30,11 @@ public class Report {
         this.report_id = report_id;
     }
 
-    public Product getProduct() {
+    public Produiict getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(Produiict product) {
         this.product = product;
     }
 
